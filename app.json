@@ -1,40 +1,44 @@
-
 {
-    "name": " 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎",
-    "description": "Download videos from various websites using this Telegram bot.",
-    "logo": "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
-    "keywords": [
-        "drm-video-dl",
-        "video-extract",
-        "pyrogram"
-    ],
-    "repository": "https://github.com/nikhilsainiop/Masteruploader",
-    "success_url": "https://github.com/nikhilsainiop/Masteruploader",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "Enter your Telegram API ID.",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Enter your Telegram API Hash.",
-            "required": true
-        },
-        "BOT_TOKEN": {
-            "description": "Enter your Telegram Bot Token.",
-            "required": true
-        },
-        "AUTH_USERS": {
-            "description": "Enter your authorized user IDs, e.g., 6801378994,5919400080,...(Seprate by Comma) ",
-            "required": true
-        }
+  "name": "SAINI BOTS",
+  "description": "Download videos from various websites using this Telegram bot.",
+  "logo": "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+  "keywords": [
+    "telegram-bot",
+    "video-downloader",
+    "pyrogram",
+    "drm"
+  ],
+  "repository": "https://github.com/Ravisindhav/Masteruploader/blob/main/config.py",
+  "success_url": "https://t.me/Masteruploder2bot", 
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org",
+      "value": "27660379",
+      "required": true
     },
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "standard-2x"
-        }
+    "API_HASH": {
+      "description": "Your Telegram API Hash from https://my.telegram.org",
+      "value": "19c71c27733f0954371085198855125a",
+      "required": true
     },
-    "addons": [],
-    "buildpacks": []
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "7684518675:AAEElgfSgsAp0cUz2J3vCgX99GHVbEHRKmM",
+      "required": true
+    },
+    "AUTH_USERS": {
+      "description": "Comma-separated Telegram user IDs allowed to use the bot.",
+      "value": "5459854363",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [],
+  "addons": []
 }
