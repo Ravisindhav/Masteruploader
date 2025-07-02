@@ -1,10 +1,18 @@
 import os
 
 class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    AUTH_USER = os.environ.get('AUTH_USERS', '7602994049').split(',')
-    AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
+    # Bot token from @BotFather
+    BOT_TOKEN = "7684518675:AAEElgfSgsAp0cUz2J3vCgX99GHVbEHRKmM"
+
+    # Telegram API ID & Hash from https://my.telegram.org
+    API_ID = 27660379
+    API_HASH = "19c71c27733f0954371085198855125a"
+
+    # Authorized user(s) – aapka Telegram user ID
+    AUTH_USERS = [5459854363]  # You can add more IDs here
+
+    # API backend URL
     HOST = "https://drm-api-six.vercel.app"
-    CREDIT = " 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+
+    # Bot credit or branding name
+    CREDIT = "@ravisind"
